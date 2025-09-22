@@ -4,12 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пример: список ссылок и форма</title>
+  <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-<main>
-  <h1>Список ссылок (маркированный) и форма</h1>
+  <header>
+    <div class = "header-container">
+      <div class = "logo">
+        <img src="логотип.JPG" alt = "Логотип">
 
-  <section>
+      </div>
+      <div class = "site-title">
+        <h1>Сайт "Обо всем!"</h1>
+      </div>
+      <nav class = "main-menu">
+        <a href = "#links">Ссылки</a>
+        <a href = "#table">Таблица</a>
+        <a href = "#form">Форма</a>
+      </nav>
+    </div>
+  </header>
+<main>
+
+  
+
+  <section id="links"></section>
     <h2>Маркированный список ссылок</h2>
     <ul>
       <li><a href="http://kubsu.ru">1) http://kubsu.ru — главная (http)</a></li>
@@ -76,11 +94,58 @@
       <li><a href="ftp://user:password@ftp.example.com/path/to/file.zip">21) ftp://user:password@ftp.example.com/path/to/file.zip</a></li>
 
     </ul>
-  </section>
+  
+    <section id = "table">
+      <h2>Таблица</h2>
+      <table>
+        <tr>
+          <th>Number</th>
+          <th>Товар</th>
+          <th>Количество (кг)</th>
+          <th>Качество</th>
+          <th>Стоимость</th>
+        </tr>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Яблоки</td>
+          <td>5</td>
+          <td>Отличное</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Груши</td>
+          <td>2</td>
+          <td>Среднее</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Апельсины</td>
+          <td>10</td>
+          <td>Отличное</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Мандарины</td>
+          <td>0,5</td>
+          <td>Мятые</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td colspan="4">Итог:</td>
+          <td>3610</td>
+        </tr>
+        
+      </tbody>
+      </table>
+    </section>
 
   <hr>
 
-  
+    <section id="form">
     <h2>Форма</h2>
     <form action="/submit" method="post">
       
@@ -130,9 +195,16 @@
 
     <button type="submit">Сохранить</button>
     </form>
-  
+  </section>
 
   <hr>
+  <div id = "down">Конец</div>
+  <a href = "#">Наверх</a>
+  <footer>
+    <div class = "footer-container">
+      <p>&copy; Файрушин Альфред 2025. Права защищены.</p>
+    </div>
+  </footer>
 
 
 
