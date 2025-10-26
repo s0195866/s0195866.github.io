@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости услуги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Калькулятор стоимости услуги</h1>
+        
+        <div class="form-group">
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label>Тип услуги:</label>
+            <div class="radio-group" id="service-type-group"></div>
+        </div>
+        
+        <div class="form-group hidden" id="options-group">
+            <label for="options">Опции товара:</label>
+            <select id="options" name="options"></select>
+        </div>
+        
+        <div class="form-group hidden" id="property-group">
+            <div class="checkbox-group">
+                <input type="checkbox" id="property" name="property">
+                <label for="property">Дополнительное свойство</label>
+            </div>
+        </div>
+        
+        <div class="result">
+            <h3>Итоговая стоимость:</h3>
+            <div class="price" id="total-price">100 руб.</div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
